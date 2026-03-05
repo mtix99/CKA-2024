@@ -1,0 +1,19 @@
+{
+  "name": "user-asset-check",
+  "version": "1.0.0",
+  "description": "Forge app: check all assets assigned to a Jira user",
+  "main": "src/resolvers/index.js",
+  "scripts": {
+    "build": "forge deploy",
+    "tunnel": "forge tunnel"
+  },
+  "dependencies": {
+    "@forge/api": "^4.0.0",
+    "@forge/resolver": "^2.0.0",
+    "@forge/react": "^10.0.0",
+    "@forge/bridge": "^4.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.0.0"
+  }
+}
