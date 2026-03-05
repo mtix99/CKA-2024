@@ -1,0 +1,25 @@
+modules:
+  jira:globalPage:
+    - key: asset-check-modal
+      title: Check User Assets
+      layout: blank
+      resource: main-ui
+      resolver:
+        function: resolver
+function:
+  - key: resolver
+    handler: index.handler
+resources:
+  - key: main-ui
+    path: src/frontend/index.jsx
+app:
+  id: '<YOUR_APP_ID>'
+permissions:
+  scopes:
+    - read:jira-user
+    - read:jira-work
+    - read:servicedesk-request
+  external:
+    fetch:
+      backend:
+        - api.atlassian.com
